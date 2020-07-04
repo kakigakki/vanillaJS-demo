@@ -19,6 +19,7 @@ settingButton.addEventListener("click", function() {
   navBar.classList.toggle("navHide")
 })
 
+console.dir(typeInput);
 //选择难度
 difficulty.addEventListener("input", startCount)
 
