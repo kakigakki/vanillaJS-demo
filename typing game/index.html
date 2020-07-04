@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="nav">
+            <select name="difficulty" id="difficulty">
+            <option value="easy">簡単</option>
+            <option value="medium">普通</option>
+            <option value="hard">難しい</option>
+            <option value="dead">地獄</option>
+          </select>
+        </div>
+        <div class="card">
+            <p>スピード勝負！</p>
+            <div class="text">
+                <div class="time">
+                    <span>残り時間：</span>
+                    <span class="leftTime bigSize">0</span>
+                    <span>秒</span>
+                </div>
+                <div class="score">
+                    <span>スコア：</span>
+                    <span class="yourScore bigSize">0</span>
+                </div>
+            </div>
+            <div class="word">
+                <p><span>↓</span>下記単語タイプしましょう</p>
+                <p class="typeWord"></p>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="勝負しますか？">
+            </div>
+        </div>
+        <div class="card card2Hide">
+            <p>負けたぞ！</p>
+            <p>獲得したスコアは：<span class="totalScore bigSize">0</span></p>
+            <button class="button reloadBtn">もう一回！</button>
+        </div>
+
+        <button class="button setting">
+          表示</button>
+    </div>
+
+    <script src="./index.js">
+    </script>
+</body>
+
+</html>
