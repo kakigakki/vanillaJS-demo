@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1 class="title">MIKINA映画館</h1>
+        <div class="pickMovie">
+            <span>映画を選んでください：</span>
+            <select name="movies" id="movies">
+              <option value="kimetu">鬼滅の刃</option>
+              <option value="haikyu">ハイキュー！！</option>
+              <option value="naruto">ナルト</option>
+              <option value="onepiece">ワンピース</option>
+            </select>
+            <span class="selected">1990</span><span>円/枚</span>
+        </div>
+        <div class="info">
+            <div>
+                <span class="seat disableExample"></span>&nbsp;
+                <span>N/A</span>
+            </div>
+            <div>
+                <span class="seat chosenExample"></span>&nbsp;
+                <span>売切</span>
+            </div>
+            <div>
+                <span class="seat freeExample"></span>&nbsp;
+                <span>空席</span>
+            </div>
+        </div>
+        <div class="cinema">
+            <div class="screen"></div>
+            <div class="seats">
+                <div class="col">
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                    <div class="row">
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                        <span class="seat"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            <p>
+                現在<span class="count">0</span>席が選択中です。
+            </p>
+            <p>
+                お値段は: <span>¥</span><span class="price"></span>
+            </p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

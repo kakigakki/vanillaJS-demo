@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body,
+html {
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+}
+
+.wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 500px;
+}
+
+.title {
+    text-align: center;
+    margin: 5px;
+}
+
+.pickMovie {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#movies {
+    color: black;
+    margin-left: 25px;
+    width: 40%;
+    height: 30px;
+    outline: none;
+    user-select: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px rgb(182, 241, 133);
+}
+
+#movies option {
+    color: black;
+    height: 30px;
+}
+
+.selected {
+    font-size: 10px;
+    margin-left: 10px;
+    color: rgb(182, 241, 133);
+}
+
+.selected+span {
+    margin-left: 2px;
+    font-size: 10px;
+    color: rgb(182, 241, 133);
+}
+
+.info {
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(119, 119, 119, 0.13);
+    user-select: none;
+}
+
+.seat {
+    display: inline-block;
+    width: 15px;
+    height: 13px;
+    background-color: white;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    cursor: pointer;
+}
+
+.way {
+    display: inline-block;
+    width: 10px;
+}
+
+.disableExample {
+    pointer-events: none;
+    background-color: rgb(110, 110, 110);
+}
+
+.chosenExample {
+    pointer-events: none;
+    background-color: rgb(182, 241, 133);
+}
+
+.freeExample {
+    pointer-events: none;
+}
+
+.chosen {
+    background-color: rgb(182, 241, 133);
+    box-shadow: 0 0 1px 1px rgb(182, 241, 133);
+}
+
+.cinema {
+    margin: 30px 0;
+    position: relative;
+    perspective: 500px;
+    height: 200px;
+}
+
+.screen {
+    width: 200px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 1px 6px 1px white;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: rotateX(-30deg) translate(-50%, -20%)
+}
+
+.seats {
+    position: absolute;
+    width: 70%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seats .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+.seats .col:nth-child(1) {
+    align-items: flex-end;
+}
+
+.seats .col:nth-child(3) {
+    align-items: flex-start;
+}
+
+.summary {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.summary p {
+    text-align: center;
+}
+
+.summary span {
+    font-size: 22px;
+    color: rgb(182, 241, 133);
+}
