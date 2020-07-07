@@ -1,6 +1,6 @@
 const movies = document.querySelector("#movies")
 const moviePrice = document.querySelector(".selected")
-const seats = document.querySelectorAll(".seat")
+const seats = Array.from(document.querySelectorAll(".seat"))
 const totalPrice = document.querySelector(".price")
 const count = document.querySelector(".count")
 
@@ -10,6 +10,7 @@ function changePrice(num) {
   totalPrice.innerText = num * +count.innerText
 }
 
+//添加选择事件
 movies.addEventListener("input", function() {
   switch (movies.value) {
     case "kimetu":
@@ -29,10 +30,17 @@ movies.addEventListener("input", function() {
   }
 })
 
-seats.forEach(item => {
-  item.addEventListener("click", function() {
-    item.classList.toggle("chosen")
-    if (item.classList.contains("chosen")) {
+for (let i = 0; i < seats.length; i++) {
+  //初始化选中的位置
+  if (i % 7 == Math.floor(Math.random() * 10)) {
+    seats[i].classList.add("soldExample")
+    i--
+    continue
+  }
+  //添加点击事件
+  seats[i].addEventListener("click", function() {
+    this.classList.toggle("chosen")
+    if (this.classList.contains("chosen")) {
       count.innerText++
         totalPrice.innerText = +totalPrice.innerText + +moviePrice.innerText
     } else {
@@ -40,4 +48,4 @@ seats.forEach(item => {
         totalPrice.innerText = +totalPrice.innerText - +moviePrice.innerText
     }
   })
-})
+}

@@ -79,6 +79,11 @@ html {
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     cursor: pointer;
+    transition: 0.3s all;
+}
+
+.seat:hover {
+    transform: scale(1.1);
 }
 
 .way {
@@ -91,9 +96,9 @@ html {
     background-color: rgb(110, 110, 110);
 }
 
-.chosenExample {
+.soldExample {
     pointer-events: none;
-    background-color: rgb(182, 241, 133);
+    background-color: rgb(241, 164, 133);
 }
 
 .freeExample {
@@ -106,6 +111,7 @@ html {
 }
 
 .cinema {
+    user-select: none;
     margin: 30px 0;
     position: relative;
     perspective: 500px;
