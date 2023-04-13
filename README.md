@@ -1,6 +1,6 @@
 # 練習用の DEMO
 
-JS のスキル能力を高めるため、vanillaJS だけ利用し、色んな DEMO を作ってみた。
+Challenge myself to enhance my JS skills by creating something captivating using only pure JS, without relying on any external libraries or frameworks.
 
 | NAME                          | DEMO                                                                                             |
 | ----------------------------- | ------------------------------------------------------------------------------------------------ |
